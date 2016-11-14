@@ -1,0 +1,28 @@
+﻿<div class="container-fluid main" ng-controller="ordersController">
+    <br />
+    <br />
+
+    <div class="table-responsive">
+        <table class="table-bordered">
+            <thead>
+                <tr>
+                    <th>Number</th>
+                    <th>Date Created</th>
+                    <th>Date Approved</th>
+                    <th>Quaintity</th>
+                    <th>Approved</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="order in orders">
+                    <td>{{$index+1}}</td>
+                    <td>{{order.dateOfOrder}}</td>
+                    <td>{{order.dateOfAproving}}</td>
+                    <td>{{order.quantity}}</td>
+                    <td>{{order.approved}}</td>
+                 </tr>
+                    
+            </tbody>
+        </table>
+    </div>
+</div>

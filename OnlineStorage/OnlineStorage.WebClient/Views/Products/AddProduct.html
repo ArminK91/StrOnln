@@ -1,0 +1,16 @@
+﻿<div class="container-fluid main">
+    <br />
+    <br />
+
+    <div class="input-group">
+        <input id="name" type="text"  ng-model="name" placeholder="Name" required ng-minlength="3"/>
+        <label>Price:<input type="number" ng-model="price"  placeholder="Price" required /></label>
+        <label>Active:<input ng-model="activ" type="checkbox" /></label>
+        <label>Details:<input type="text" ng-model="details" placeholder="Details" required /></label>
+        <label>Image:<input type="file" ng-model="files" multiple value="Browse" /></label>
+        <button ng-controller="uploader" ng-click="upload()">Uploads</button>
+        <br /><br />
+        <input type="button" value="Submit" ng-click="submit()" />
+        <a href="#/productDetails">Cancel</a>
+        </div>
+</div>

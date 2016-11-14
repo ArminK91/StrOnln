@@ -1,0 +1,20 @@
+﻿<div class="container-fluid main" ng-controller="productsController">
+
+    <br /><br />
+    <div class="table-responsive table-striped">
+        <table class="table-bordered">
+            <tr ng-repeat="product in products">
+                <td>{{$index +1}}</td>
+                <td>{{product.name}}</td>
+                <td>{{product.price}}</td>
+                <td>{{product.activ}}</td>
+                <!--<td>{{product.image}}</td>-->
+                <td><input type="button" ng-click="buyProduct(product.id)" value="Buy" /></td>
+                <td><a href="#/productDetails/{{product.id}}">See details</a></td>
+            </tr>
+        </table> 
+        <br />
+        <br />
+        <a href="#/addProduct">Add product</a>
+    </div>
+</div>
